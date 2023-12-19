@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+  <head>
+    
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    
+  </head>
+  <body>
+
+    <main>
+      <div id="map">
+        <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+        <button class="button wheat">Wheat</button>
+        <button class="button sugar">Sugar</button>
+        <button class="button rice">Rice</button>
+        <button class="button seafood">Seafood</button>
+      </div>
+      <div class="slidecontainer"><input type="range" min="1961" max="2013" value="1999" class="slider" id="myRange"></div>
+
+    </main>
+    <script src="countries.js"></script>
+    <script src="stuff.js"></script>
+    <script src="code.js"></script>
+  </body>
+</html>
